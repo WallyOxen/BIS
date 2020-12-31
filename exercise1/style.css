@@ -1,0 +1,90 @@
+html {
+  margin: none;
+  padding: none;
+  height: 100vh;
+  width: 100vw;
+  font-family: sans-serif;
+}
+
+#container {
+  display: flex;
+  height: 80vh;
+}
+
+#one, #two, #three {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+#one {
+  animation: one 2s infinite;
+}
+
+#two .text {
+  animation: two 2s infinite;
+}
+
+#three {
+  background: blue;
+}
+
+#three .text {
+  animation: three 2s infinite;
+}
+
+@keyframes one {
+  0% {
+    background: blue;
+    color: white;
+  }
+  
+  50% {
+    background: yellow;
+    color: black;
+  }
+
+  100% {
+    background: blue;
+    color: white;
+  }
+}
+
+@keyframes two {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes three {
+  0% {
+    transform: translateY(0);
+  }
+
+  33% {
+    transform: translateY(30vh);
+    color: white;
+  }
+
+  50% {
+    color: black;
+  }
+
+  66% {
+    transform: translateY(-30vh);
+    color: white;
+  }
+  
+  100% {
+    transform: translateY(0px);
+    color: black;
+  }
+}

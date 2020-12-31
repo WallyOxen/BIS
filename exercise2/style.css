@@ -1,0 +1,24 @@
+html {
+  margin: none;
+  padding: none;
+  height: 100vh;
+  width: 100vw;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#play {
+  width: 10rem;
+  height: 5rem;
+}
+
+#play:focus {
+  background: rgba(0, 128, 200, 0.5);
+}
